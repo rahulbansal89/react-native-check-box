@@ -60,10 +60,11 @@ export default class CheckBox extends Component {
         return null;
     }
     onClick() {
-        this.setState({
+        const state = {
             isChecked: !this.state.isChecked
-        })
-        this.props.onClick();
+        }
+        this.setState(state)
+        this.props.onClick(state);
     }
     _renderLeft() {
         if (this.props.leftTextView)return this.props.leftTextView;
