@@ -45,6 +45,7 @@ export default class CheckBox extends Component {
         disabled: PropTypes.bool,
     }
     static defaultProps = {
+        onClick: () => ({}),
         isChecked: false,
         isIndeterminate: false,
         leftTextStyle: {},
